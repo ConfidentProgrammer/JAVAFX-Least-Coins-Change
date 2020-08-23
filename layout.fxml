@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.91" prefHeight="363.0" prefWidth="490.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="change.RunController">
+   <children>
+      <Label prefHeight="35.0" prefWidth="485.0" text="Enter cents to calculate shortest change">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label prefHeight="35.0" prefWidth="59.0" text="Coins" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="75.0">
+         <children>
+            <Label fx:id="ttl25" text="25 Cents : 100" />
+            <Label fx:id="ttl10" text="10 Cents : 100" />
+            <Label fx:id="ttl5" text="5 Cents : 100" />
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+      <TextField fx:id="txtamt" maxWidth="200.0" minWidth="0.0" opacity="0.87" prefHeight="31.0" prefWidth="200.0" />
+      <Button fx:id="calcbtn" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
+      <Label fx:id="twoFive" text="25 : " />
+      <Label fx:id="oneZero" text="10 : " />
+      <Label fx:id="five" text="05 : " />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</VBox>
